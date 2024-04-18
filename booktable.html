@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar  navbar-expand-lg bg-dark">
+            <div class="container-fluid bg-dark">
+              <h1 class="navbar-brand me-auto ms-5">Feane</h1>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Feane</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav  justify-content-center flex-grow-1 pe-3 g-">
+                    <li class="nav-item">
+                      <a class="nav-link mx-lg-2 " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-lg-2 " href="menus.html">Menus</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-lg-2" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-lg-2 active" href="booktable.html">Book Table</a>
+                    </li>
+                  </ul>
+                  <div class="mt-1">
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-warning rounded" type="submit">Search</button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+                <button type="button" class="btn btn-warning ms-2 rounded me-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+                    <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form class="row g-3">
+                                <div class="col-md-6">
+                                  <label for="inputEmail4" class="form-label">Email</label>
+                                  <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputPassword4" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputAddress" class="form-label">Address</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputAddress2" class="form-label">Address 2</label>
+                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputCity" class="form-label">City</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="inputState" class="form-label">State</label>
+                                  <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-2">
+                                  <label for="inputZip" class="form-label">Zip</label>
+                                  <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                      Check me out
+                                    </label>
+                                  </div>
+                                </div>
+                                  <button type="submit" class="btn btn-primary">Sign in</button>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                <!--Modal end-->
+                <button class="navbar-toggler border-0 navbar-light ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                  <span class="navbar-toggler-icon "></span>
+                </button>
+            </div>
+          </nav>
+    </header>
+    <section class="container mt-5  g-4 mb-4 w-100">
+        <div class="booktital mb-3">
+          <h1 class="w-50 text-center">Book Table</h1>
+        </div>
+        <div class="d-flex col-sm-12">
+        <div class="Booktableform  w-50">
+          <form >
+              <div class="formgroup mb-3">
+                <input type="text" placeholder="Enter Your Name" class="w-100 p-3 rounded-pill mt-3 border border-warning">
+              </div>
+              <div class="formgroup mb-3">
+                <input type="number" placeholder="Enter Your Phone No" class="w-100 p-3 rounded-pill border border-warning">
+              </div>
+              <div class="formgroup mb-3 ">
+                <input type="email" placeholder="Enter Your Email" class="w-100 p-3 rounded-pill border border-warning">
+              </div>
+              <div class="formgroup mb-3">
+                <input type="number" placeholder="How Many Person" class="w-100 p-3 rounded-pill border border-warning">
+              </div>
+              <div class="formgroup mb-3" class="w-100 p-3 rounded-pill border border-warning">
+                <input type="date"class="w-100 p-3 rounded-pill border border-warning">
+              </div>
+              <div class="formbtn mb-3">
+                <button type="submit"  class="btn btn-warning rounded-pill w-50 mt-3 ms-1 fs-5">Book Now</button>
+              </div>
+        </form>
+        </div>
+        <div class="map ms-5 w-50 ">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.2010870139775!2d72.829166775501!3d18.922491411034468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1684a08e4c5%3A0x783a5ec96eda8bea!2sTaj%20Hotel%20view%20point!5e0!3m2!1sen!2sin!4v1709232851309!5m2!1sen!2sin" width="100%" height="370" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+    
+        </div> 
+      </div>
+    </section>
+      <section class="bg-dark">
+        <footer class=" bg-dark mt-5 ">
+          <div class="container">
+            <div class="main text-light mt-5 d-flex flex-row g-4 justify-content-between">
+              <div class="mt-5 mb-5 text-center">
+                <h2 class="mt-3">Contact Us</h2>
+                <h4 class="mt-3">Location</h4>
+                <h4> call +01 1234567890</h4>
+                <h4>demo@gmail.com</h4>
+              </div>
+              <div class="mt-5 mb-5 text-center">
+                <h1 class="mt-3">Feane</h1>
+                <p class="mt-3 fs-5">Necessary, making this the first true generator on the <br> Internet. It uses a dictionary of overbr
+                  <br> 200 Latin words, combined with          </p>
+              </div>
+              <div class="mt-5 mb-5 text-center">
+                <h1 class="mt-3">Opening Hotel</h1>
+                <h4 class="mt-3">Everyday</h4>
+                <h4>10.00 Am -10.00 Pm</h4>
+              </div>
+            </div>
+                <div class="text-light text-center">
+                  <h4>© 2024 All Rights Reserved By Free Html Templates</h4>
+                  <h4 class="mt-5  mb-5">© Distributed By ThemeWagon</h4>
+                </div>
+          </div>
+        </footer>
+      </section>
+</body>
+</html>

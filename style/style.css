@@ -1,0 +1,157 @@
+@font-face {
+    font-family: mine;
+    src: url(/Assighment/food/americankestralital1_2.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+.navbar-brand
+{
+    font-weight: 500;
+    font-size: 50px;
+    color: #ffbe33;
+    font-family: mine;
+    margin-top: 20px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1000;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    
+}
+.nav-link:hover, .nav-link.active{
+    color: #ffbe33;
+}
+@media(min-width: 961px){
+.nav-link::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color:  #ffbe33;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.nav-link:hover::before, .nav-link.active::before
+{
+   width: 100%;
+   visibility: visible; 
+}
+}
+.navbar-toggler
+{
+    color: #ffbe33;
+}
+.hero-section
+{
+   background-image: url(/Assighment/food/images/hero-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.info{
+    margin-top: 150px;
+    margin-left: 150px;
+}
+.info h1{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 70px;
+    animation-delay: 0.5s;
+   
+}
+.info p{
+    color: white;
+    font-size: 20px;
+    animation-delay: 1s;
+}
+.btn-cap button{
+    animation-delay: 1.5s;
+    width: 200px;
+    height: 50px;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.Menus{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.Menus img{
+    transition: .3s;
+}
+.Menus img:hover{
+  transform:scale(1.03) ;
+}
+
+.secmenus img:hover{
+    animation: rot .5s linear;
+}
+@keyframes rot {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(12deg) scale(1.032);
+        
+    }
+    75%{
+        transform: rotate(-12deg) scale(1.032);
+        
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.priceinfo button{
+    margin-left: auto;
+}
+.btnview {
+   display: flex;
+   justify-content: center;
+}
+/* feane section*/
+.feane-section{
+    width: 100%;
+    height: 100%;
+   
+}
+.feane-section img{
+    margin-top: 130px;
+    margin-left: 100px;
+}
+.Readinfo{
+    margin-top: 200px;
+}
+.Readinfo button{
+    width: 30%;
+}
+.map iframe{
+    border-radius: 30px;
+}
+.main{
+    gap: 30px;
+}
+footer{
+    height: 50vh;
+}
